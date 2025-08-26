@@ -1,0 +1,93 @@
+Ian
+----
+
+-Primitives vs Objects? Primitives are like byte level primitives, uhh integers, shorts, ints... while object are kind of um larger objects, so like Strings, things that take in refences and etc.
+
+-Exceptions vs Errors? Errors are serious, have to be "called", Exceptions mmmm has to find it before it runs. Guessed Throwable correctly! He DID go into Checked vs Unchecked. Explained them well. Called back to project. 
+
+-3 types of SQL relationships? 1-1, m2m, 1-m, decent examples for each, didn't know the "3 tables involed" in m2m when I asked.
+
+-Joins? Types you've seen? Great
+
+-JDBC and how you've used it? Good on use case, location, and everything. Explained what goes in DAO classes decently, did trail off a little bit as he tried to explain
+
+-How do you use a PreparedStatement? Went into ? parameters, but stumbled a bit explaining how to set the values
+
+-HTTP verbs? GET, POST, PUT, RETRIEVE, PATCH, DELETE, knew put vs patch
+
+-6 Guiding Principles? "client server, separation, cacheable, UI, code on demand" 
+
+-Javalin? What's it used for? Used to create a web server, for... java, I mean uh for our HTTP requests I guess we used it. From it we return the responses to the server. Used it within our build.
+
+-Status codes? Found in response, each number corresponds to the different message I guess *asked to elaborate* mentioned 100-500 but forgets what they correspond to. eventually remembered
+
+
+Ethan
+-----
+
+-Java? Why use it? HOW use it? Good points, ObjOriented, real world application through objects, a little bit of ramble toward the end but went into 4 pillars well
+
+-Two types of Exceptions and how you've used them? Checked/Unchecked, knew both. Said "found" at compile time vs runtime. What do you mean by "found"? Compiler - good! Mixed up answers a bit for examples of each
+
+-How to make relationship b/t tables in SQL? Good - PK & FK - explained both well
+
+-Types of joins? Inner, Outer, Left, Right, explained use cases well with a little tripping but missed some of the B lister joins (cross, self, natural)
+
+-JDBC in your project? Good at first, knows it overall. Had a little trouble elaborating on how it's used, but overall I'm convinced that he knows it.
+
+-PreparedStatement vs Statement? Good answer
+
+-REST means what? How we want to create an app - we want to make sure the app is well built and stateless. Knew some of the other principles like client/server, layered, and cacheable but a bit of trailing, not a fulllllly comprehensive answer
+
+-HTTP verbs? Great answer, confident on what they do and how they're different
+
+-What is an endpoint? A little shaky here. "A URL that makes http commands/verbs that perform an action, on, I guess, a command of HTTP verbs"
+
+-CTX object in Javalin? Interacts with what you're sending to the server, both ways. Say you have an invalid response, you can set that to a certain address (talking about status codes). A little shaky in explaining, but knows how it's used.
+
+
+Aurnab
+-------
+
+-Java is Object Oriented, what does that mean? Talked OOP, good on all 4. A little bit of hmm 
+
+-Inheritance? Examples and How? GOOD ANSWER! + mention of the Object class. Talked about relation to overriding  
+
+-DDL? Good on all the commands, and acronym. Further detail made the answer great.
+
+-Normalization? Good on overall concept. Cleaner and simpler DB. Slight confusion on 2nd vs 3rd but got it at the end
+
+-JDBC? How have you used it? Forgot acronym, but great on use case and how he's used it
+
+-PreparedStatement vs Statement? Very good answer with all the main points, enthusiastic, tells a story
+
+-JSON? What role does it play? Good on everything, very clear explanation of use case.
+
+-HTTP Verbs? Good on all the main characters, good on use case. Explained Patch/Put inprompted!! :)
+
+-Endpoints in Javalin? Collected his thoughts gracefully, then explained very well good on ctx - Controller, Collects info from postman, sends back response
+
+-Status codes? Great on use case and types
+
+Kaylee
+-------
+
+-Java is ObjOriented, but what does that mean? Good answer overall, went into classes, constructors, objects. Good on 4 pillars! 
+
+-Collections? Vs Arrays? Great answer here, family of iterables buzzphrase. Really good on everything and mentioned all the key points. Good but did drop the phase "Object comes from Iterable" but just misspoke I thing. 
+
+-DML? Good on acronym and went through all 4 well - related it to CRUD :)
+
+-6 constraints you can put on a column? Good PK/FK, not null, unique, check, default
+
+-What's in the DAO layer? Great on the what and why, and clearly understands the role it plays in the app. Even went into PrepStatment vs Statement.
+
+-How to actually establish a connection in JDBC? Went into EVERYTHING from dependency to ConnectionUtil, to using it in DAO
+
+-6 Principles of REST? Good intro to REST, knew the 6 principles very well!
+
+-Sessions vs statelessness? Explained sessions AND cookies well, talked about how it's not the biggest deal that we disobeyed the stateless principle, went more into cookies storing
+
+-What's an endpoint in Javalin? Good answer overall, related them to our Handlers and how Javalin translates JSON into the appropriate language
+
+-Status codes? Answered so comprehensively that she answered my followup question before I asked it

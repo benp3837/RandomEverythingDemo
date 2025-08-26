@@ -1,0 +1,30 @@
+<p>Hello from Parent Component!</p>
+
+<p>Look at my childen:</p>
+
+<div>
+    <!-- *ngFor - great for DYNAMICALLY RENDERING multiple components -->
+    <app-child *ngFor = "let name of arr" [name]="name"/>
+</div>
+
+<!-- *ngIf - great for CONDITIONAL RENDERING -->
+<p *ngIf = "arr.length > 0">
+    <!-- STRING INTERPOLATION - taking a value from the TS and rendering it on the HTML page -->
+    I have {{arr.length}} children! I am very tired
+</p>
+
+<!-- EVENT BINDING - attaching a function that runs when you (click) this button -->
+<button (click)="showSurprise()">Click for a surprise...</button>
+
+<!-- PROPERTY BINDING - using the value of a variable in the TS to determine the value of an element's attribute -->
+<div (mouseover)="toggleHideDiv()">
+    <p>I am a paragraph that's always visible</p>
+    <p [hidden]="hideDiv">Hello I am a paragraph that was previously hidden - toggled with property binding!</p>
+</div>
+
+<h3>Wait a minute... who are you?</h3>
+
+<!-- TWO WAY BINDING - Lets you take user input and save it in a variable defined in the TS -->
+<input type="text" [(ngModel)]="name"/>
+
+<h4 *ngIf="name">Hello, {{name}}. Nice to meet you!</h4>

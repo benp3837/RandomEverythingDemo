@@ -1,0 +1,70 @@
+Rahul
+------
+
+Primitives vs Object? Good on both, talked about stack and heap, didn't give me evvvverything I wanted when I pressed on what an object is. Objects are instantiations of classes, it'll take on the same behavior
+
+Types of Exceptions in Java? Mostly good on both, a little bit of missing detail did say "checked exceptions are out of our control". Knew his try/catch and throws 
+
+Relationship b/t PK/FK? Good on what they are, every FK references the PK of another table, good on constraints
+
+DDL question - good on each command though a litttttttle shaky explaining, tied them to the project well
+
+How to connect to DB in a JDBC app? Took a second, was a fairly long second, but said we use connection objects and knew Connection conn. "connecting the project to the database"
+
+PreparedStatement vs Statement? Good, explained use cases well and knows his PreparedStatement process and SQL Injection
+
+What is REST? More of an architecture, it's comprised of the "6 apis" (then named all the guiding principles)
+
+HTTP Requests and Responses? Good, talked well about the role of the client/server. Went a bit into client error vs server error
+
+How does Javalin help us handle HTTP Requests? Brought up the context object, what it does, and how it helps us process requests and build responses
+
+Talk to me about status codes? Good on everything, knew that we can specify our own status code in the controller when we send responses. 
+
+
+Ritik
+-----
+
+-Java is OO, what dat mean? Great explanation, went into objects/classes/methods. Good on 4 pillars after I pryed for them
+
+-List Set Queue Map? Great, knows Map isn't a collection, walked me through how they're different. Knows they're Interfaces. Named some concrete classes for each
+
+-Constraints? PK, Unique, Null, didn't know others off the dome, went into datatypes a bit
+
+-Joins in SQL? Good on use case, good example
+
+-DAO? Good on acronym, great explanation of use case and implementation. Went into PreparedStatement. Lots of great little details
+
+-Establishing DB connection? URL, username, password, a little more vague when I dug a little deeper on how to create the connection. Eventually got to Connection object a bit
+
+-HTTP Request/Response? Good on client/server and how they're different. Explained the flow well, went into Verbs and status codes
+
+-PUT vs PATCH? good good, sandwich example
+
+-Javalin endpoints? "Path for the computer to find where the resource is ..... you'd want something at a specific area, retrieve the endpoint to find it"
+
+-Context object? All the info you need for a request or response, header, body, metadata, request methods, path/query param
+
+
+Roshni
+------
+
+-Class/object/primitive? Good explanation on all 3 and how they relate/differ. Some wording issues but I feel she knows what she's talking about. Went into OOP a bit. "number type" "you assign a class to an object". little missing details but still good
+
+-String equality question
+
+-DML? Good overall, little missing details. DID mention CRUD operations, knew the commands BUT said DROP deletes a row
+
+-Normalization? "Making sure the data is readable in a certain way and that there aren't any duplicates". Knew the 3 levels to varying degrees. didn't go super deep into them but knew the rules. Knows they require each other
+
+-DAO layer role and project tie in? Great here in the big picture, not as much detail about the methods themselves. mentioned PreparedStatement
+
+-How to establish DB connection? "I remember we use ConnectionUtil so we'd create a file that connects to the DB ans I don't exactly remember how it works but estbalished the statements"
+
+-HTTP verbs? They match the CRUD operations - Good on all
+
+-Status codes - request or response? Appear in the responses, walked me through the status codes well
+
+-CTX object? Great on getting the request, knows her stuff and what she did. A little shakier on the response end
+
+-Endpoint vs Handlers? Great, used slightly iffy terminology here and there but it's clear she knows exactly how they're used. Lots of good project examples 
