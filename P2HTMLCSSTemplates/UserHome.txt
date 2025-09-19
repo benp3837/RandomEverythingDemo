@@ -1,0 +1,24 @@
+<h3>Welcome, {{this.authService.loggedInUser.username}}</h3>
+
+<table class="table table-dark table-striped w-75 m-auto">
+  <thead>
+    <tr>
+      <th>Record ID</th>
+      <th>Record Title</th>
+      <th>Record Artist</th>
+      <th>Record Price</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records">
+      <td>{{record.recordId}}</td>
+      <td>{{record.recordTitle}}</td>
+      <td>{{record.recordArtist}}</td>
+      <td>{{record.recordPrice}}</td>
+      <td>
+        <button class="btn btn-sm btn-primary">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

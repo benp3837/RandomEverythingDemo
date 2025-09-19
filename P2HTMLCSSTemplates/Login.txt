@@ -1,0 +1,47 @@
+.header-text {
+    text-align: center;
+}
+
+.p-card {
+  max-width: 550px;
+  margin: 7em auto;
+  font-size: smaller;
+}
+
+.p-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.my-button{
+    background-color: var(--p-slate-700); 
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+
+
+---------------
+
+
+<p-card>
+
+  <h2 class="header-text">Welcome to the Loan Application</h2>
+
+  <p class="header-text">Log in to manage your account</p>
+
+  <form (ngSubmit)="onLogin()">
+    <div class="p-field">
+      <label for="username">Username</label>
+      <input id="username" type="text" pInputText [(ngModel)]="username" name="username" placeholder="username" required />
+    </div>
+    <div class="p-field">
+      <label for="password">Password</label>
+      <input id="password" type="password" pInputText [(ngModel)]="password" name="password" placeholder="password" required />
+    </div>
+    <button pButton class="my-button" type="submit" label="Login"></button>
+  </form>
+
+</p-card>
